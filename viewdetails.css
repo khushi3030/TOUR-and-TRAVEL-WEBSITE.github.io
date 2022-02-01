@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --orange:#0066FF;
+  }
+
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+.heading{
+    text-align: center;
+    padding:2.5rem 0
+  }
+  
+  .heading span{
+    font-size: 3.5rem;
+    background:rgba(0, 89, 255, 0.116);
+    color:var(--orange);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+  }
+  span{
+      font-weight: bold;
+  }
+  .heading span.space{
+    background:none;
+  }
+  td , th{
+    padding: 15px 10px;
+    text-align: center;
+   }
+  .place{
+      color: #333
+  }
+   .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background:var(--orange);
+    color:#fff;
+    padding:.8rem 3rem;
+    border:.2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    width: 20%;
+    align-items: center;
+    padding: .5rem;
+  }
+  
+  .btn:hover{
+    background:rgba(0, 89, 255, 0.116);
+    color:var(--orange);
+  }
+
+  /* .center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  } */
+  .footer{
+    margin:0 auto;
+    display:block;
+    text-align: center;
+}
+
+

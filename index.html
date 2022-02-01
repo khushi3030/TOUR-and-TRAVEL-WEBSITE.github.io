@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour-Travel</title>
+    <!-- /////// swiper link ////////// -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- //////////// font awesome link //////////// -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- ////////// CSS link /////////////// -->
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+
+    <!-- /////////////////// HEADER SECTION ///////// -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>H</span>industani <span>H</span>ike</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="http://localhost/Final%20sem3%20project/login.php">Login</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <!-- ////////////////////////// LOGIN SECTION //////////////// -->
+
+    <div class="login-form-container" id="login">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="login.php">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>dont't have an account? <a href="#Register">register now</a></p>
+        </form>
+
+    </div>
+
+    <div class="login-form-container" id="Register">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="login.php">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter Your name">
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>dont't have an account? <a href="#login">register now</a></p>
+        </form>
+
+    </div>
+
+    <!-- //////////////////// HOME SECTION ////////////////////// -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Adventure is worthwhile</h3>
+            <p>discover new places with us, adventure awaits</p>
+            <a href="https://en.wikipedia.org/wiki/Tourism_in_India" class="btn" target="_blank">Discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="./Images/video8.mp4"></span>
+            <span class="vid-btn" data-src="./Images/video 2.mp4"></span>
+            <span class="vid-btn" data-src="./Images/video9.mp4"></span>
+            <span class="vid-btn" data-src="./Images/video.mp4"></span>
+            <span class="vid-btn" data-src="./Images/video 3.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="./Images/video8.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+
+    <!-- ////////////////// BOOK SECTION //////////////////// -->
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="./Images/book.jpg" alt="">
+            </div>
+
+            <form action="http://localhost/Final%20sem3%20project/booking.php" method="post">
+                <div class="inputbox">
+                    <h3>Where to</h3>
+                    <input type="text" placeholder="place name...." name="destination">
+                </div>
+                <div class="inputbox">
+                    <h3>From Where</h3>
+                    <input type="text" placeholder="place name...." name="">
+                </div>
+                <div class="inputbox">
+                    <h3>How Many</h3>
+                    <input type="number" placeholder="number of guests" name="nog">
+                </div>
+                <div class="inputbox">
+                    <h3>Departure From Home</h3>
+                    <input type="date" name="departure">
+                </div>
+                <div class="inputbox">
+                    <h3>arrival back home</h3>
+                    <input type="date" name="arrival">
+                </div>
+                <input type="submit" class="btn" value="book now">
+                <!-- <a href="booking_details.html" class="btn">Submit</a> -->
+            </form>
+        </div>
+    </section>
+
+    <!-- /////////////////// PACKAGES SECTION /////////////////// -->
+    <section class="packages" id="packages">
+
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="./Images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Maharashtra</h3>
+                    <p>The city's most iconic landmark, the state capital of Maharashtra boasts interesting museums,
+                        eye-catching architecture, as well as some amazing Buddhist and Hindu caves.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">Rs.19000 <span>Rs.25000.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./Images/travelr.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Rajisthan</h3>
+                    <p>Rajasthan attracts tourists for its historical forts, palaces, art and culture .Jaipur, Udaipur,
+                        Jaisalmer, Mount abu, Jodhpur, Ajmer are some of the famous destinations</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">Rs.18000.00 <span>Rs.23000.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./Images/travel8.jfif" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Kerala</h3>
+                    <p>A charming South Indian destination adorned with the emerald backwaters,
+                        Kerala boasts numerous tourist places with which you will fall in love instantly..</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">Rs.24000.00 <span>Rs.30000.00</span></div>
+                    <a href ="#book" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./Images/travel9.jfif" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Punjab</h3>
+                    <p>Chandigarh is the first planned city of India. ... Apart from the city's architecture and
+                        buildings like Capitol Complex, High Court, Secretariat, Legislative Assembly and giant Open
+                        Hand Monument.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">Rs.17000.00 <span>Rs.20000.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./Images/travel10.jfif" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Madhya Pradesh</h3>
+                    <p>Known as the City of Lakes, Bhopal is the capital of Madhya Pradesh. Founded by Raja Bhoj, the
+                        city has many natural and artificial lakes and it is one of the greenest cities in the country.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">Rs.21000.00 <span>Rs.27000.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./Images/Travel4.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>Uttrakhand</h3>
+                    <p>Manali is known for its unlimited adventure opportunities, the famous Hadimba Temple, the scenic
+                        Rohtang Pass, the snow-laden Solang Valley and its delightful culinary scene.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">Rs.22000.00 <span>Rs.29000.00</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /////////////// SERVICES SECTION ////////////////////// -->
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>Affordable hotels</h3>
+                <p>Affordable hotels: Comfy hotels that are easy on the pocket</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>Food and drink</h3>
+                <p>The meals included in our packages can be customised according to your needs.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safety guide</h3>
+                <p>Our hotel services follow all covid 19 protocols .Regular sanitization is being done.
+                    We folllow all covid 19 safety protocols.our staff is fully vaccinated.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>Customer Services</h3>
+                <p>we provide 24/7 customer support,fair deals ,cheap packages.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>Fastest Travel</h3>
+                <p>Get to your destination quickly and easily and avoid travel blues as you gear up for your next
+                    adventure!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Adventures</h3>
+                <p>Traveling and exploring new places to extreme sports like scuba diving, sky diving, parachuting,
+                    rafting, mountain climbing
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ////////////////// GALLERY SECTION ////////////////// -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="./Images/jk.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/g-11.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/g-15.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/g-13.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/g-14.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/g-16.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- //////////////////// REVIEW SECTION //////////////// -->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./Images/pic5.jpg" alt="">
+                        <h3>Sakshi</h3>
+                        <p>This was a great deal for a fabulous hotel in an excellent location.
+                            Your company was helpful and easy to deal with.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./Images/pic6.jfif" alt="">
+                        <h3>Prabal</h3>
+                        <p>Our holiday was a varied mixture personalised to our interests in historic towns and sites,
+                            architecture, textiles, rural life, wildlife .</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./Images/pic7.jfif" alt="">
+                        <h3>Utkarsh</h3>
+                        <p>Great communication and replied to emails quickly. Yes would definitely recommend and will be
+                            using your website again.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./Images/pic8.jfif" alt="">
+                        <h3>Ashu</h3>
+                        <p>So easy to book with and no trouble at all throughout our holiday. I would recommend booking
+                            holidays through Travel Online anytime!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ////////////////  CONTACT SECTION ///////////////// -->
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="./Images/contact2.jfif" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputbox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputbox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="Send message">
+            </form>
+        </div>
+    </section>
+
+    <!-- /////////////// BRAND SLIDER SECTION /////////////////// -->
+
+    <section class="brand-container">
+        <div class="swiper brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./Images/1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Images/2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Images/3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Images/4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Images/5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Images/6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ///////////////////  FOOTER SECTION //////////////-->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p> India’s leading website for hotel, flight, and holiday bookings, At travel we helps you book flight
+                    tickets that are affordable and customized to your convenience. With customer satisfaction being our
+                    ultimate goal, we also have a 24/7 dedicated helpline to cater to our customer’s queries and
+                    concerns. Serving over 5 million happy customers, we at travel are glad to fulfill the dreams of
+                    folks who need a quick and easy means to find air tickets.</p>
+            </div>
+            <div class="box">
+                <h3>Branch Locations</h3>
+                <a href="#">Mumbai</a>
+                <a href="#">Delhi</a>
+                <a href="#">Bengalore</a>
+                <a href="#">Hyderabad</a>
+                <a href="#">Lucknow</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#services">services</a>
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact us</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <div class="social">
+                    <a href="#">facebook <i class="fab fa-facebook-square"></i></a>
+                </div>
+                <div class="social">
+                    <a href="#">instagram <i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="social">
+                    <a href="#">twitter<i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="social">
+                    <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <h1 class="credit">Created by <span>Pragya, Khushi, Anisha and Priyanshi</span> | &copy; all rights reserved
+            2021</h1>
+    </section>
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="./jscript.js"></script>
+
+
+    <!-- <form action="post">
+        <button value="b1">View Details</button>
+    </form> -->
+</body>
+
+</html>
